@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -48,25 +49,30 @@
     <main class="container">
         <div class="row">
 
-            <section class="col-md-7">
+            <section class="col-md-8">
                 <h2>Summary: Latitude vs. X</h2>
                 <hr>
                 <img class="float-start w-50" src="./assets/images/Fig1.png" alt="City Latitude vs Max Temperature">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quidem expedita fugiat officiis iste
-                    id
-                    deserunt illo neque, nemo nobis architecto commodi obcaecati totam rem.</p>
-                <p>Eos, recusandae. Distinctio laborum, explicabo, at exercitationem excepturi in harum quos hic quod
-                    doloribus sed tempore natus perferendis amet porro, deserunt nesciunt totam nostrum expedita? Eos,
-                    recusandae. Distinctio laborum, explicabo, at exercitationem excepturi in harum quos hic quod
-                    doloribus
-                    sed tempore natus perferendis amet porro, deserunt nesciunt totam nostrum expedita? Eos, recusandae.
-                    Distinctio laborum, explicabo, at exercitationem excepturi in harum quos hic quod doloribus sed
-                    tempore
-                    natus perferendis amet porro, deserunt nesciunt totam nostrum expedita?</p>
+                <p>This html webpage serves as a way to practice my abilities to create an html webpage and explore CSS and Boostrap. I use data and images that I used for a prior project where I examined the weather using a Weather API. In that project, I looked at how latitude effected the weather in various ways which you can see from the following visualizations and analysis. These include how latitude effects temperature, the level of cloud coverage, humidity and wind speed. </p>
+                <p>This page serves as my landing page or my "home" page. You can use the navbar to navigate to further analysis or simply click on one of the vizualations to the right of this text. I made these vizualizations in a Jupyter Notebook using MatPlotLib scatterplots. Some of the findings were not too unusual or unexpected such as the finding that as you move closer to the equator the max temperature of the area (latitude) increases. </p>
             </section>
-
-            <aside class="col-md-4">
-
+        
+            <aside class="col-sm-4">
+                <h3>Visualizations</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="temp.html"><img class="img-fluid" src="./assets/images/Fig1.png" alt="City Latitude vs Temperature"></a>
+                    </div> 
+                    <div class="col-sm-6">  
+                        <a href="cloud.html"><img class="img-fluid" src="./assets/images/Fig3.png" alt="City Latitude vs Cloudiness"></a>
+                    </div>     
+                    <div class="col-sm-6">
+                        <a href="humidity.html"><img class="img-fluid" src="./assets/images/Fig2.png" alt="City Latitude vs Humidity"></a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="wind.html"><img class="img-fluid" src="./assets/images/Fig4.png" alt="City Latitude vs Wind Speed"></a>
+                    </div>
+                </div>
             </aside>
         </div>
 
